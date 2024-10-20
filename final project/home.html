@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebody</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type ="image/png" sizes="32x32" href="images/weblogo.png"/>
+</head>
+<body>
+
+    <div class="logo-container" id="top">
+        <div class="logo">
+            <a href="home.html"><img src="images/homebodylogo.png" alt="Homebody Logo"></a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div id="mobile-menu-links" class="mobile-menu">
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <!-- TABLET-DESKTOP MENU -->
+    <div class="tablet-desktop">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <header>
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Pasta and Tomato Ingredients">
+            <div class="hero-text">
+                <h1>"TOO LAZY? <br> &nbsp;&nbsp;&nbsp;&nbsp; COOK IT."</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="description">
+            <p>Welcome to our curated collection of food genres designed just for you! Here, you'll find an array of healthy options for those times when you want to eat mindfully, delightful sweet treats to satisfy your sweet tooth, and a variety of snack bites to quell your cravings. Each recipe is easy to make at home, ensuring you can enjoy delicious meals that cater to every mood and occasion. Dive in and start your culinary adventure today!
+            </p>
+        </section>
+
+        <section class="featured">
+            <video controls poster="images/dessert-bananaice.png">
+                <source src = "media/Homebody-video.mp4" type="video/mp4">
+                <track src="media/captions.vtt" kind ="captions" srclang="en-us" label ="English">
+                <p>Your browser does not support the video element.</p>
+            </video>
+
+            <div class="featured-info">
+                <p class="explore">EXPLORE</p>
+                <h3>SATISFY YOUR CRAVINGS</h3>
+                <p class="featured-descr">Explore our ultimate online recipe book, where you can delve into a world of delicious dishes and culinary inspiration!</p>
+            </div>
+        </section>
+
+        <section class="suggestions">
+            <div class="suggestions-text">
+                <h2>Help Us <br>Improve!</h2>
+                <p>Share your suggestions to make our <br> website even better.</p>
+            </div>
+
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                        <label for="suggestion">HAVE SOME SUGGESTIONS?</label>
+                        <textarea id="suggestion" placeholder="Enter suggestion..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" placeholder="name@example.com">
+                    </div>
+                    <center><button type="submit">SUBMIT</button></center>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contact-social">
+                    <p>Contact Us</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/phone.png" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/yonadecilio/" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/yonadeshou/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+                        <a href=""><img src="images/email.png" alt="Email"></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="#">All Categories</a>
+                    <a href="#">Help</a>
+                    <a href="#top">Back to Top</a>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <img src="images/logofooter.png" alt="Homebody logo">
+                <p>All rights reserved 2024</p>
+                <div class="footer-links">
+                    <a href="#">Advertisement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Visitor Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

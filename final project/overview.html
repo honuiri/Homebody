@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebody</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/weblogo.png"/>
+    
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        td{
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #000;
+        }
+
+        th, th a{
+            background-color: #2f5c2e;
+            color: #f5f7f8;
+            font-family: "Krona One", sans-serif;
+            text-decoration: none;
+        }
+
+        th a:hover{
+            color: #fcde70;
+        }
+
+        td, td a {
+            background-color: #f5f7f8;
+            font-family: "Krub", sans-serif;
+            color: #000;
+        }
+
+        td a:hover{
+            text-decoration: none;
+        }
+
+        /* Setting column widths */
+        .col-1, .col-2, .col-3 {
+            width: 33.33%;
+        }
+
+        .title {
+            font-family: 'Krona One', sans-serif;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .paragraph {
+            text-align: center;
+            font-family: 'Krub', sans-serif;
+            margin: 50px;
+        }
+        
+        .back {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .back a {
+            color: #2f5c2e;
+        }
+
+        .back a:hover{
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 630px){
+
+        .title{
+            font-size: 1.7rem;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        .paragraph{
+            font-size: 0.7rem;
+            margin-top: 0;
+            margin-left: 40px;
+            margin-bottom: 30px;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        td, td a{
+            font-size: 0.6rem;
+        }
+
+        th, th a{
+            font-size: 1rem;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="logo-container" id="top">
+        <div class="logo">
+            <a href="home.html"><img src="images/homebodylogo.png" alt="Homebody Logo"></a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div id="mobile-menu-links" class="mobile-menu">
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <!-- TABLET-DESKTOP MENU -->
+    <div class="tablet-desktop">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <center><h1 class="title">OVERVIEW OF THE RECIPES</h1>
+
+        <p class="paragraph">Here’s a comprehensive overview to help you effortlessly navigate our collection of recipes! Whether you’re seeking healthy meals, indulgent desserts, or quick snacks, this guide will direct you to the perfect dish for any occasion. Explore our curated categories, discover new favorites, and enjoy the convenience of finding exactly what you need with just a glance!</p></center>
+
+        <!-- TABLE STARTS HERE -->
+       <center>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-1"><a href="healthy.html">Healthy Choices</a></th>
+                    <th class="col-2"><a href="sweets.html">Sweet Cravings</a></th>
+                    <th class="col-3"><a href="snack.html">Snack Bites</a></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="healthy.html#beans">Baked Beans with Poached Eggs</a></td>
+                    <td><a href="sweets.html#mousse">Chocolate Mousse</a></td>
+                    <td><a href="snack.html#breadrolls">Cheese Dog Bread Rolls</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#fries">Air Fryer Everything Bagel Avocado Fries</a></td>
+                    <td><a href="sweets.html#icebox">Milk 'n' Cookies Icebox Cake</a></td>
+                    <td><a href="snack.html#dynamite">Dynamite Lumpia</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#carbonara">Pea and Spinach Carbonara</a></td>
+                    <td><a href="sweets.html#lavacake">Microwave Chocolate Lava Cake</a></td>
+                    <td><a href="snack.html#potatoballs">Crispy Fried Mashed Potato Balls</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#sushi">Cucumber Sushi</a></td>
+                    <td><a href="sweets.html#chocobanana">Chocolate Banana Bundles</a></td>
+                    <td><a href="snack.html#popcorn">Microwave Brown Bag Popcorn</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#omelette">Herby Cheese and Tomato Omelette</a></td>
+                    <td><a href="sweets.html#mugcake">No Egg Chocolate Mug Cake</a></td>
+                    <td><a href="snack.html#cheesestick">Spring Roll Cheese Sticks</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#cauliflower">Fried Cauliflower</a></td>
+                    <td><a href="sweets.html#pudding">Hasty Chocolate Pudding</a></td>
+                    <td><a href="snack.html#corndog">Corn Dog</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#eggtomato">Egg and Tomato Wrap</a></td>
+                    <td><a href="sweets.html#smores">Peanut Butter Smores Dip</a></td>
+                    <td><a href="snack.html#gardeniapizza">Gardenia Pizza Pandesal</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#salad">Honey Lime Fruit Salad</a></td>
+                    <td><a href="sweets.html#friedapples">Southern Fried Apples</a></td>
+                    <td><a href="snack.html#pittapizza">Chicken and Pepper Pitta Pizza</a></td>
+                </tr>
+                <tr>
+                    <td><a href="healthy.html#eggham">Green Eggs and Ham</a></td>
+                    <td><a href="sweets.html#chocoberries">Chocolate-covered Strawberries</a></td>
+                    <td><a href="snack.html#chips">Potato Chips</a></td>
+                </tr>
+            </tbody>
+
+        </table>
+        </center>
+        <!-- TABLE ENDS HERE -->
+
+        <p class="back">&#8592; go back to <a href="recipes.html">recipes</a></p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contact-social">
+                    <p>Contact Us</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/phone.png" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/yonadecilio/" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/yonadeshou/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+                        <a href=""><img src="images/email.png" alt="Email"></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="#">All Categories</a>
+                    <a href="#">Help</a>
+                    <a href="#top">Back to Top</a>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <img src="images/logofooter.png" alt="Homebody logo">
+                <p>All rights reserved 2024</p>
+                <div class="footer-links">
+                    <a href="#">Advertisement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Visitor Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

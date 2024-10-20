@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebody</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type ="image/png" sizes="32x32" href="images/weblogo.png"/>
+</head>
+<body>
+    
+    <div class="logo-container" id="top">
+        <div class="logo">
+            <a href="home.html"><img src="images/homebodylogo.png" alt="Homebody Logo"></a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div id="mobile-menu-links" class="mobile-menu">
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <!-- TABLET-DESKTOP MENU -->
+    <div class="tablet-desktop">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <section class="to-cook">
+            <h1>WHAT'S THERE TO COOK?</h1>
+            <p>Select your cravings and bring them to life today! Whether you’re in the mood for something sweet, savory, or a delightful snack, our collection has you covered. Dive into a world of flavors and satisfy your taste buds with ease!</p>
+            <p class="click"><a href="overview.html">click here</a> for the overview of all the recipes &#8594;</p>
+        </section>
+
+        <section class="healthy" id="placement">
+            <img src="images/healthy.jpg">
+            <div class="info">
+                <p class="collection">COLLECTION</p>
+                <h3><a href="healthy.html">HEALTHY <br/>CHOICES</a></h3>
+                <p class="define">Explore a curated selection of wholesome dishes that not only delight the palate but also promote optimal health and well-being.</p>
+            </div>
+        </section>
+
+        <section class="sweet" id="placement">
+            <div class="info-sweets">
+                <p class="collection">COLLECTION</p>
+                <h3><a href="sweets.html">SWEET <br/>CRAVINGS</a></h3>
+                <p class="define">Indulge in a delightful collection of irresistible sweet treats that promise to satisfy your cravings and elevate your dessert experience!</p>
+            </div>
+            <img src="images/sweets.jpg">
+        </section>
+
+        <section class="snacks" id="placement">
+            <img src="images/snacks.jpg">
+            <div class="info">
+                <p class="collection">COLLECTION</p>
+                <h3><a href="snack.html">SNACK BITES</a></h3>
+                <p class="define">Discover a tempting array of snack bites that pack bold flavors into every delicious morsel, perfect for satisfying cravings anytime!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contact-social">
+                    <p>Contact Us</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/phone.png" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/yonadecilio/" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/yonadeshou/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+                        <a href=""><img src="images/email.png" alt="Email"></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="#">All Categories</a>
+                    <a href="#">Help</a>
+                    <a href="#top">Back to Top</a>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <img src="images/logofooter.png" alt="Homebody logo">
+                <p>All rights reserved 2024</p>
+                <div class="footer-links">
+                    <a href="#">Advertisement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Visitor Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
